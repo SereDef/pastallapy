@@ -29,7 +29,7 @@ baseline = rng.choice(levels, size=n , p=[0.45, 0.2, 0.15, 0.2])
 follow_up = np.where(rng.random(n) < 0.6, baseline, rng.choice(levels, size=n))
 smoking = pd.DataFrame({"baseline": baseline, "follow-up": follow_up})
 
-pp.
+pp.tagliatelle(smoking, "baseline", "follow-up")
 ```
 
 ![A tagliatelle plot of smoking status at baseline and follow-up](tagliatelle_example.png)
